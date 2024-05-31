@@ -1,0 +1,101 @@
+:root {
+    --main-bg-color: #333; /* Dark background for footer */
+    --accent-color: #ffcc00; /* Bright accent color */
+    --text-color: #fff; /* Light text color */
+    --hover-color: #ff9900; /* Hover effect color */
+    --link-hover-color: #007b5a; /* Link hover color */
+}
+
+.bg-footer {
+    background-color: var(--main-bg-color);
+    padding: 50px 0 30px;
+    color: var(--text-color); /* Set default text color */
+    text-align: center; /* Center align text for better layout */
+}
+
+.bg-footer a {
+    text-decoration: none;
+    color: var(--text-color); /* Links inherit footer text color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.bg-footer a:hover {
+    color: var(--link-hover-color); /* Hover color for links */
+}
+
+.footer-heading {
+    letter-spacing: 2px;
+    margin-bottom: 1rem; /* Add spacing below headings */
+    text-transform: uppercase; /* Uppercase for headings */
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 1.5rem; /* Increase font size for better readability */
+}
+
+.footer-heading:after {
+    content: '';
+    width: 50px;
+    border-bottom: 2px solid var(--accent-color); /* Accent color for heading underline */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center underline */
+    bottom: 0;
+}
+
+.footer-link a {
+    line-height: 40px;
+    font-size: 1rem; /* Increase font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-link a:hover {
+    color: var(--hover-color); /* Hover effect for links */
+}
+
+.contact-info {
+    color: var(--text-color);
+    font-size: 1rem; /* Increase font size */
+    margin-top: 1rem; /* Add spacing for better layout */
+}
+
+.footer-social-icon {
+    font-size: 1.25rem; /* Increase icon size */
+    height: 40px; /* Increase size for better clickability */
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%; /* Circular icons */
+    text-align: center;
+    display: inline-block;
+    margin: 0 0.5rem; /* Space between icons */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.footer-social-icon:hover {
+    background-color: var(--hover-color); /* Hover effect for icons */
+}
+
+.facebook {
+    background-color: #4e71a8;
+    color: #ffffff;
+}
+
+.twitter {
+    background-color: #55acee;
+    color: #ffffff;
+}
+
+.google {
+    background-color: #d6492f;
+    color: #ffffff;
+}
+
+.apple {
+    background-color: #424041;
+    color: #ffffff;
+}
+
+.footer-alt {
+    color: #acacac;
+    margin-top: 1rem; /* Add spacing for better layout */
+    font-size: 0.875rem; /* Adjust font size for better readability */
+}

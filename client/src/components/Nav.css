@@ -1,0 +1,77 @@
+:root {
+    --main-bg-color: #333; /* Dark background for navbar */
+    --accent-color: #ffcc00; /* Bright accent color */
+    --text-color: #fff; /* Light text color */
+    --hover-color: #ffcc00; /* Hover effect color (same as accent color) */
+}
+
+.navmain {
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.nav1 {
+    display: block;
+    background-color: var(--main-bg-color); /* Set navbar background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.navchild1 {
+    width: 50%;
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.navchild2 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Vertically center items */
+    padding-right: 1rem;
+}
+
+.navchild2 ul {
+    display: flex; /* Ensure ul items are in a row */
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    gap: 2rem; /* Space between items */
+}
+
+.navchild2 ul li {
+    position: relative;
+}
+
+.navchild2 ul li a {
+    color: var(--text-color);
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 1rem; /* Add padding for better clickable area */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navchild2 ul li a:hover {
+    color: var(--hover-color); /* Change text color on hover */
+}
+
+.navbar1 {
+    background-color: var(--main-bg-color); /* Set navbar background */
+}
+
+.navbar-brand {
+    border-radius: 50%;
+    padding: 0.5rem; /* Add padding inside the brand circle */
+    color: var(--main-bg-color); /* Brand text color */
+    text-align: center; /* Center the brand text */
+    display: inline-block; /* Ensure proper sizing */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar-brand:hover {
+    color: var(--hover-color); /* Change text color on hover */
+}
